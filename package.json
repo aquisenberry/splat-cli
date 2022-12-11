@@ -1,0 +1,48 @@
+{
+  "name": "splat-cli",
+  "version": "1.0.0",
+  "description": "Command Line inteface for creation and management of splat-ecs projects",
+  "bin": "./index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "splat",
+    "javascript",
+    "game"
+  ],
+  "author": "Anthony Quisenberry <anthony@quisenberry.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.29.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {},
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.0"
+  }
+}
